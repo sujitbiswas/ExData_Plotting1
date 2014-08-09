@@ -30,7 +30,7 @@ table <- downloadAndNormalizeData()
 
 png(filename = "plot4.png", width = 480, height = 480, units = "px")
 
-par (mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
+par (mfrow = c(2,2))
 with(table, {
   plot(DateTime, Global_active_power, xlab="", ylab="Global Active Power", type="l")
   plot(DateTime, Voltage, xlab="datetime", ylab="Voltage", type="l")
